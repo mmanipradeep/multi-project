@@ -1,13 +1,15 @@
-package com.manipradeep.learnings.validations.helpers;
+package com.learnings.manipradeep.learnings.validations.helpers;
 
-import com.manipradeep.learnings.validations.SimpleValidation;
-import com.manipradeep.learnings.validations.Validation;
+import com.learnings.manipradeep.learnings.validations.SimpleValidation;
+import com.learnings.manipradeep.learnings.validations.Validation;
+
+import java.util.Objects;
 
 import static java.lang.String.format;
 
 public class StringValidationHelpers {
 
-    public static Validation<String> notNull = SimpleValidation.from((s) -> s != null, "must not be null.");
+    public static Validation<String> notNull = SimpleValidation.from(Objects::nonNull, "must not be null.");
 
     public static Validation<String> moreThan(int size){
         return SimpleValidation.from((s) -> s.length() >= size, format("must have more than %s chars.", size));

@@ -1,7 +1,7 @@
-package com.manipradeep.learnings;
+package com.learnings.manipradeep.learnings;
 
-import com.manipradeep.learnings.model.Person;
-import com.manipradeep.learnings.validator.PersonValidator;
+import com.learnings.manipradeep.learnings.model.Person;
+import com.learnings.manipradeep.learnings.validator.PersonValidator;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 
@@ -31,16 +31,21 @@ public abstract class AbstractPersonValidatorsTest {
         }
     }
 
+
     @Test
     public void person_shortFirstName_validationFail() {
-        try {
-            getValidatorInstance().validate(
-                    new Person("bdhfghdfghdfghdfghdfgh", "clinton", "bill@gmail.com", 60)
-            );
-            fail();
-        } catch (IllegalArgumentException e) {
-            assertTrue(e.getMessage().contains("firstname"));
-        }
+        // Use assertThrows to check for the exception
+        IllegalArgumentException thrown = assertThrows(
+                IllegalArgumentException.class,
+                () -> getValidatorInstance().validate(
+                        new Person("b", "clinton", "bill@gmail.com", 60)
+                ),
+                "Expected IllegalArgumentException to be thrown for short first name" // Optional message
+        );
+
+        // Assert that the exception message contains "firstname"
+        assertTrue(thrown.getMessage().contains("firstname"),
+                "Exception message should contain 'firstname'");
     }
 
     @Test

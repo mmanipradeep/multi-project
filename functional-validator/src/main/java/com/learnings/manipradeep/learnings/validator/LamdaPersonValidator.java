@@ -1,9 +1,9 @@
-package com.manipradeep.learnings.validator;
+package com.learnings.manipradeep.learnings.validator;
 
-import com.manipradeep.learnings.model.Person;
+import com.learnings.manipradeep.learnings.model.Person;
 
-import static com.manipradeep.learnings.validations.helpers.IntegerValidationHelpers.intBetween;
-import static com.manipradeep.learnings.validations.helpers.StringValidationHelpers.*;
+import static com.learnings.manipradeep.learnings.validations.helpers.IntegerValidationHelpers.intBetween;
+import static com.learnings.manipradeep.learnings.validations.helpers.StringValidationHelpers.*;
 
 public class LamdaPersonValidator implements PersonValidator {
     public void validate(Person person) {

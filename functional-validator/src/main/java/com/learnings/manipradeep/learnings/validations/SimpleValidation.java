@@ -1,15 +1,15 @@
-package com.manipradeep.learnings.validations;
+package com.learnings.manipradeep.learnings.validations;
 
 import java.util.function.Predicate;
 
 public class SimpleValidation<K>  implements Validation<K> {
 
 
-    private Predicate<K> predicate;
-    private String onErrorMessage;
+    private final Predicate<K> predicate;
+    private final String onErrorMessage;
 
     public static <K> SimpleValidation<K> from(Predicate<K> predicate, String onErrorMessage) {
-        return new SimpleValidation<K>(predicate, onErrorMessage);
+        return new SimpleValidation<>(predicate, onErrorMessage);
     }
 
     private SimpleValidation(Predicate<K> predicate, String onErrorMessage) {

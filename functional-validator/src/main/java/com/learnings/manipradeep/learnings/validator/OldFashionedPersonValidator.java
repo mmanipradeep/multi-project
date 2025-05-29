@@ -1,6 +1,6 @@
-package com.manipradeep.learnings.validator;
+package com.learnings.manipradeep.learnings.validator;
 
-import com.manipradeep.learnings.model.Person;
+import com.learnings.manipradeep.learnings.model.Person;
 
 public class OldFashionedPersonValidator implements PersonValidator {
 

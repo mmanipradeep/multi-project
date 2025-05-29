@@ -1,9 +1,9 @@
-package com.manipradeep.learnings.validations;
+package com.learnings.manipradeep.learnings.validations;
 
 public class ValidationResult {
 
-    private boolean valid;
-    private String messsage;
+    private final boolean valid;
+    private final String messsage;
 
     public static ValidationResult ok(){
         return new ValidationResult(true, null);

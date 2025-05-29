@@ -1,4 +1,4 @@
-package com.manipradeep.learnings.validations;
+package com.learnings.manipradeep.learnings.validations;
 
 @FunctionalInterface
 public interface Validation<K> {

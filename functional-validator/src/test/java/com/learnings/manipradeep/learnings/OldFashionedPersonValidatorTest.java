@@ -1,7 +1,7 @@
-package com.manipradeep.learnings;
+package com.learnings.manipradeep.learnings;
 
-import com.manipradeep.learnings.validator.OldFashionedPersonValidator;
-import com.manipradeep.learnings.validator.PersonValidator;
+import com.learnings.manipradeep.learnings.validator.OldFashionedPersonValidator;
+import com.learnings.manipradeep.learnings.validator.PersonValidator;
 
 public class OldFashionedPersonValidatorTest extends AbstractPersonValidatorsTest {
 

@@ -1,4 +1,4 @@
-package com.manipradeep.learnings.model;
+package com.learnings.manipradeep.learnings.model;
 
 public class Person {
     private String firstName;

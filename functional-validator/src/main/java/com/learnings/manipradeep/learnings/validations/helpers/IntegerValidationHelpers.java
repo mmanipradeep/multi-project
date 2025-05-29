@@ -1,7 +1,7 @@
-package com.manipradeep.learnings.validations.helpers;
+package com.learnings.manipradeep.learnings.validations.helpers;
 
-import com.manipradeep.learnings.validations.SimpleValidation;
-import com.manipradeep.learnings.validations.Validation;
+import com.learnings.manipradeep.learnings.validations.SimpleValidation;
+import com.learnings.manipradeep.learnings.validations.Validation;
 
 import static java.lang.String.format;
 
